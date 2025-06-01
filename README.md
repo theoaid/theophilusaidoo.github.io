@@ -1,1 +1,154 @@
-# theophilusaidoo.github.io
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Theophilus Aidoo - Portfolio</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: system-ui, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    header {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      padding: 1rem 1.5rem;
+      background-color: #ffffff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .profile-pic {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 1rem;
+      border: 2px solid #ccc;
+    }
+    .name-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    nav {
+      margin-left: auto;
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+    nav a:hover {
+      color: #007acc;
+    }
+    main {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 2rem 1rem;
+    }
+    section {
+      flex: 1 1 320px;
+      max-width: 700px;
+      margin: 1rem;
+      background-color: white;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+    h2 {
+      margin-top: 0;
+      color: #007acc;
+    }
+    ul {
+      padding-left: 1.2rem;
+    }
+    /* Email reveal button */
+    .reveal-button {
+      cursor: pointer;
+      color: #007acc;
+      text-decoration: underline;
+      background: none;
+      border: none;
+      font-size: 1rem;
+      padding: 0;
+    }
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+      }
+      nav {
+        margin-left: 0;
+        justify-content: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="images/theo.png" alt="Theophilus Aidoo" class="profile-pic" />
+    <div class="name-title">Theophilus Aidoo</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>👤 About</h2>
+      <p>
+        I'm Theophilus Aidoo, a doctoral researcher at the Interdisciplinary Institute of Societal Computing (I2SC). I work on computer vision and satellite imagery to study human displacement, using deep learning and representation learning. I enjoy playing football and watching movies in my free time.
+      </p>
+    </section>
+    <section id="projects">
+      <h2>📂 Projects</h2>
+      <ul>
+        <li>
+          <h3>🛰️ Weakly Supervised Parking Lot Occupancy Detection</h3>
+          <p>
+            We propose a weak supervision framework using 3m resolution imagery to estimate parking lot occupancy based on Saturday/Sunday labels. It minimizes the need for expensive data and aids mobility analysis.
+            Find more about the project <a href="https://github.com/Societal-Computing/equitable_mobility_estimation">here</a>
+          </p>
+        </li>
+        <li>
+          <h3>🤖 LLMRS: LLM-Based Recommender System</h3>
+          <p>
+            We propose LLMRS, a zero-shot LLM-based recommender system that uses product reviews to tailor suggestions, outperforming baseline models on software purchases. Find more about the project
+            <a href="https://github.com/igunduz/LLMRS"> here</a>
+          </p>
+        </li>
+        <li>
+          <h3>🌍 Social Capital & Health Inequality via Facebook Connectivity</h3>
+          <p>
+            Using Facebook friendship data across 495 African regions, we show how social connectedness shapes reproductive health knowledge and behavior diffusion.Find more about the project 
+            <a href="https://github.com/Societal-Computing/health_inequalities">here</a>
+          </p>
+        </li>
+      </ul>
+    </section>
+    <section id="contact">
+      <h2>📫 Contact</h2>
+      <p>
+        Email: 
+        <button class="reveal-button" onclick="this.nextElementSibling.style.display='inline'; this.style.display='none'">
+          Click here to reveal
+        </button>
+        <span style="display: none;">taidoo@cs.uni-saarland.de</span>
+      </p>
+      <p>GitHub: <a href="https://github.com/theoaid">github.com/theoaid</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/theophilus-aidoo-b31319158/">Connect here</a></p>
+    </section>
+  </main>
+</body>
+</html>
