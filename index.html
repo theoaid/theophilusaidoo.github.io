@@ -3,16 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Theophilus Aidoo - Portfolio</title>
+  <title>Theophilus Aidoo</title>
   <style>
     * {
       box-sizing: border-box;
     }
     html, body {
       height: 100%;
+      margin: 0;
+      scroll-behavior: smooth;
     }
     body {
-      margin: 0;
       font-family: system-ui, sans-serif;
       background-color: #f4f4f4;
       color: #333;
@@ -24,6 +25,9 @@
       padding: 1rem 1.5rem;
       background-color: #ffffff;
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
     .profile-pic {
       width: 80px;
@@ -58,14 +62,14 @@
       width: 100%;
     }
     section {
-      flex: 1 1 320px;
       width: 100%;
       max-width: 800px;
-      margin: 1rem;
+      margin: 3rem auto; /* Added vertical spacing between sections */
       background-color: white;
-      padding: 1.5rem;
+      padding: 2rem;
       border-radius: 8px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      scroll-margin-top: 100px; /* Ensures section is not hidden behind the header */
     }
     h2 {
       margin-top: 0;
@@ -74,7 +78,6 @@
     ul {
       padding-left: 1.2rem;
     }
-    /* Email reveal button */
     .reveal-button {
       cursor: pointer;
       color: #007acc;
@@ -100,12 +103,13 @@
 <body>
   <header>
     <div style="display: flex; align-items: center;">
-    <img src="images/theo.png" alt="Theophilus Aidoo" class="profile-pic" />
-    <div class="name-title">Theophilus Aidoo</div>
+      <img src="images/theo.png" alt="Theophilus Aidoo" class="profile-pic" />
+      <div class="name-title">Theophilus Aidoo</div>
     </div>
     <nav>
       <a href="#about">About</a>
       <a href="#projects">Projects</a>
+      <a href="#blog">Blog</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
@@ -117,6 +121,7 @@
         I'm Theophilus Aidoo, a doctoral researcher at the Interdisciplinary Institute of Societal Computing (I2SC). I work on computer vision and satellite imagery to study human displacement, using deep learning and representation learning. I enjoy playing football and watching movies in my free time.
       </p>
     </section>
+
     <section id="projects">
       <h2>📂 Projects</h2>
       <ul>
@@ -130,19 +135,25 @@
         <li>
           <h3>🤖 LLMRS: LLM-Based Recommender System</h3>
           <p>
-            We propose LLMRS, a zero-shot LLM-based recommender system that uses product reviews to tailor suggestions, outperforming baseline models on software purchases. Find more about the project
-            <a href="https://github.com/igunduz/LLMRS"> here</a>
+            We propose LLMRS, a zero-shot LLM-based recommender system that uses product reviews to tailor suggestions, outperforming baseline models on software purchases.
+            <a href="https://github.com/igunduz/LLMRS">More here</a>
           </p>
         </li>
         <li>
           <h3>🌍 Social Capital & Health Inequality via Facebook Connectivity</h3>
           <p>
-            Using Facebook friendship data across 495 African regions, we show how social connectedness shapes reproductive health knowledge and behavior diffusion.Find more about the project 
-            <a href="https://github.com/Societal-Computing/health_inequalities">here</a>
+            Using Facebook friendship data across 495 African regions, we show how social connectedness shapes reproductive health knowledge and behavior diffusion.
+            <a href="https://github.com/Societal-Computing/health_inequalities">More here</a>
           </p>
         </li>
       </ul>
     </section>
+
+    <section id="blog">
+      <h2>✍️ Blog</h2>
+      <p>Coming soon! I’ll be sharing insights on computer vision, satellite data, and research updates.</p>
+    </section>
+
     <section id="contact">
       <h2>📫 Contact</h2>
       <p>
